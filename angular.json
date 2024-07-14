@@ -13,6 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
+            "externalDependencies": ["assets/*"],
             "outputPath": "dist/ang18-test",
             "index": "src/index.html",
             "browser": "src/main.ts",
@@ -21,11 +22,6 @@
             ],
             "tsConfig": "tsconfig.app.json",
             "assets": [
-              {
-                "glob": "**/*",
-                "input": "src/assets",
-                "output": "/assets/"
-              },
               {
                 "glob": "**/*",
                 "input": "public"
